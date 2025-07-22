@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Icon + Badge Animation</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #F2F5FF;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 49px;
+      height: 49px;
+      transform: translate(-50%, -50%);
+    }
+    /* ensure transform origin is center of each group */
+    #badge {
+      transform-origin: center;
+      transform-box: fill-box;
+      visibility: hidden;
+      transform: scale(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_23404_618)">
+        <g clip-path="url(#clip1_23404_618)">
+          <!-- ICON GROUP -->
+          <g id="icon" filter="url(#filter0_dd_23404_618)">
+            <rect x="7.963" y="8.61389" width="32" height="32" rx="3" fill="white"/>
+            <path d="M18.463 8.61389H36.963C38.6199 8.61389 39.963 9.95704 39.963 11.6139V43.5987L32.4065 29.279C32.1179 28.7321 31.6674 28.2878 31.1166 28.0068L25.0349 24.9039C24.3469 24.5529 23.8208 23.9502 23.5661 23.2211L18.463 8.61389Z" fill="url(#paint0_linear_23404_618)" fill-opacity="0.5"/>
+            <path d="M24.0615 23.2492L24.8531 21.5723L29.2984 30.9854C30.063 32.6051 31.7089 33.6404 33.5179 33.6404H35.213L26.2596 14.8038C25.7007 13.6283 24.0084 13.6283 23.4505 14.8038L19.1818 23.7812L24.0625 23.2483L24.0615 23.2492Z" fill="url(#paint1_linear_23404_618)"/>
+            <path d="M33.6607 16.3491L27.9624 28.4191H25.4149C24.4312 28.4191 23.7816 27.4086 24.1996 26.5296L27.7838 18.9927C28.5513 17.3797 30.1933 16.3491 31.9975 16.3491H33.6598H33.6607Z" fill="url(#paint2_linear_23404_618)"/>
+            <path d="M28.1767 28.4191L24.9323 21.5971H23.5084C22.0189 21.5971 21.0333 23.1243 21.6627 24.458L22.7052 26.6659C23.2101 27.7355 24.2971 28.42 25.4931 28.42H28.1767V28.4191Z" fill="url(#paint3_linear_23404_618)"/>
+            <path d="M24.2739 21.5971L18.007 34.8712C16.9287 37.1544 15.1882 38.6139 12.6378 38.6139H11.213L17.533 25.3227C18.6142 23.0481 19.9647 21.5962 22.5083 21.5962H24.2729L24.2739 21.5971Z" fill="url(#paint4_linear_23404_618)"/>
+          </g>
+        </g>
+        <!-- BADGE GROUP -->
+        <g id="badge">
+          <rect opacity="0.1" x="26.963" y="2.61389" width="22" height="15" rx="3" fill="#181818"/>
+          <rect x="26.963" y="0.613892" width="22" height="15" rx="3" fill="#FD93C8"/>
+          <rect x="26.963" y="2.61389" width="22" height="13" rx="3" fill="#ED0378"/>
+          <path d="M39.0919 4.61389V12.6139H37.4005V6.21936H37.3536L35.5216 7.3678V5.8678L37.5021 4.61389H39.0919Z" fill="white"/>
+        </g>
+      </g>
+      <defs>
+        <filter id="filter0_dd_23404_618" x="-4.037" y="6.61389" width="56" height="58.9848" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_23404_618"/>
+          <feOffset dy="4"/>
+          <feGaussianBlur stdDeviation="3"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_23404_618"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_23404_618"/>
+          <feOffset dy="10"/>
+          <feGaussianBlur stdDeviation="7.5"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+          <feBlend mode="normal" in2="effect1_dropShadow_23404_618" result="effect2_dropShadow_23404_618"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_23404_618" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_23404_618" x1="25.4292" y1="23.1767" x2="41.6041" y2="44.6178" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8473F1"/>
+          <stop offset="0.1869" stop-color="#8473F1"/>
+          <stop offset="0.3725" stop-color="#9082EE"/>
+          <stop offset="0.7264" stop-color="#B0A8E5"/>
+          <stop offset="0.7926" stop-color="#B7B0E3"/>
+          <stop offset="1" stop-color="#B7B0E3"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_23404_618" x1="25.0972" y1="17.2788" x2="33.8713" y2="33.8454" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#403BA2"/>
+          <stop offset="1" stop-color="#9D98FF"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_23404_618" x1="26.08" y1="26.7575" x2="31.78" y2="16.7602" gradientUnits="userSpaceOnUse">
+          <stop offset="0.23" stop-color="#403BA2"/>
+          <stop offset="1" stop-color="#337BE7"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear_23404_618" x1="22.9668" y1="22.6848" x2="26.2815" y2="28.4979" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#403BA2"/>
+          <stop offset="1" stop-color="#3D48D2"/>
+        </linearGradient>
+        <linearGradient id="paint4_linear_23404_618" x1="13.0433" y1="38.1706" x2="21.7927" y2="22.8255" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#403BA2"/>
+          <stop offset="0.48" stop-color="#3F3FCE"/>
+          <stop offset="1" stop-color="#337BE6"/>
+        </linearGradient>
+        <clipPath id="clip0_23404_618">
+          <rect width="48" height="48" fill="white" transform="translate(0.962997 0.613892)"/>
+        </clipPath>
+        <clipPath id="clip1_23404_618">
+          <rect x="7.963" y="8.61389" width="32" height="32" rx="3" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+  <script type="module">
+    import { animate } from "https://cdn.jsdelivr.net/npm/motion@12.23.0/+esm";
+    import confetti from "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/+esm";
+
+    const badge = document.getElementById("badge");
+    const audio = new Audio("https://github.com/LunaeNumen/atc/raw/refs/heads/main/success.mp3");
+
+    async function playSequence() {
+      // 1) Icon‑only pause (badge hidden)
+      badge.style.visibility = "hidden";
+      await new Promise(res => setTimeout(res, 2000));
+
+      // 2) Pop badge in
+      badge.style.visibility = "visible";
+      audio.currentTime = 0;
+      audio.play();
+      await animate(badge, { scale: [0, 1] }, {
+        ease: "circInOut",
+        duration: 1
+      }).finished;
+
+      // 3) Wiggle twice quickly, then again twice
+      await animate(badge, { rotate: [0, 10, -10, 10, -10, 0] }, {
+        duration: 0.4,
+        easing: "ease-in-out"
+      }).finished;
+      await animate(badge, { rotate: [0, 10, -10, 10, -10, 0] }, {
+        duration: 0.4,
+        easing: "ease-in-out"
+      }).finished;
+
+      // 4) Confetti burst for 1s
+      confetti({
+        particleCount: 120,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: [
+          "#4F46E5", "#FE017F", "#FEE2E2", "#00FFA3",
+          "#D1FAE5", "#413BA2", "#9192E5", "#C7D2FE",
+          "#E0E7FF", "#EEF2FF", "#E0E7FF"
+        ]
+      });
+      await new Promise(res => setTimeout(res, 1000));
+
+      // 5) Shrink badge out
+      await animate(badge, { scale: [1, 0] }, {
+        ease: "circInOut",
+        duration: 1
+      }).finished;
+      badge.style.visibility = "hidden";
+
+      // 6) Repeat indefinitely
+      playSequence();
+    }
+
+    // start
+    playSequence();
+  </script>
+</body>
+</html>
