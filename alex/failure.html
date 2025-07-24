@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Failure Animation</title>
+  <style>
+    /* Full‑screen flex container to center the SVG */
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    svg {
+      overflow: visible;
+    }
+
+    /* Base styling */
+    .shape {
+      fill: none;
+      stroke: #EF154D;
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+
+    /* Circle draw */
+    .circle {
+      stroke-dasharray: 188.5;
+      stroke-dashoffset: 188.5;
+      animation: drawCircle 1.3s ease-out forwards;
+    }
+
+    /* X‑lines draw */
+    .cross {
+      stroke-dasharray: 28.3;
+      stroke-dashoffset: 28.3;
+      animation: drawCross 0.8s ease-out forwards;
+      animation-delay: 0.7s;
+    }
+
+    @keyframes drawCircle {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes drawCross {
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+</head>
+<body>
+  <svg width="64" height="64" viewBox="0 0 64 64">
+    <!-- Outer circle -->
+    <circle class="shape circle" cx="32" cy="32" r="30" />
+    <!-- X shape: two crossing lines -->
+    <line class="shape cross" x1="22" y1="22" x2="42" y2="42" />
+    <line class="shape cross" x1="42" y1="22" x2="22" y2="42" />
+  </svg>
+</body>
+</html>
