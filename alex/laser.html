@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animated Hand + Pointer</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #hand {
+      animation: float 2s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-4px); }
+    }
+  </style>
+</head>
+<body>
+
+<svg width="197" height="149" viewBox="0 -4 197 149"
+     xmlns="http://www.w3.org/2000/svg" fill="none">
+
+  <!-- Hand layer (first 15 paths) -->
+  <g id="hand">
+    <path d="M141.694 27.6591C141.528 27.3263 109.944 31.8245 104.79 33.824C99.635 35.8235 86.7314 47.3213 83.7081 48.1534C80.6848 48.9855 74.202 55.6522 79.354 60.8161C84.506 65.98 89.9926 68.8141 101.962 63.1484C113.931 57.4828 118.917 52.9845 118.917 52.9845L127.561 51.1514C127.561 51.1514 144.35 70.98 168.289 68.6452" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M84.1637 64.6216L47.2718 107.304L40.7891 121.298" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M107.538 60.3418L59.0729 118.3L46.7715 126.132" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M49.5991 108.469C49.5991 108.469 55.7498 107.803 57.7447 115.801" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M63.0801 89.0129C67.3846 88.4292 74.1994 91.8073 75.4509 98.7124" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M135.042 28.3251L148.518 11.6634C148.171 10.876 147.22 1.51187 137.369 2.33154L111.639 32.1726" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M148.521 11.6632L149.341 5.8311C149.341 5.8311 148.01 1.83209 144.02 1C144.02 1 138.036 2.38351 137.372 2.33383" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46.8935 126.124C47.291 125.638 46.2571 124.129 44.5841 122.754C42.9111 121.378 41.2326 120.657 40.835 121.143C40.4375 121.629 41.4715 123.137 43.1445 124.513C44.8175 125.888 46.496 126.61 46.8935 126.124Z" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M116.756 94.6365C116.756 94.6365 127.321 97.8581 130.371 91.7925C130.371 91.7925 154.994 104.023 181.926 91.7925" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M146.618 14.0156C146.618 14.0156 164.537 16.1691 168.289 20.0663C172.041 23.9635 196.44 29.2566 196.44 29.2566" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130.081 10.789C130.081 10.789 118.617 9.05033 107.54 15.1656C96.4627 21.2808 79.6486 29.4825 76.2263 33.8069C72.804 38.1313 70.871 58.8616 67.8948 64.0801C64.9186 69.2987 58.1558 88.3871 71.3567 79.4403" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M71.9517 102.898C71.9517 102.898 87.2417 111.566 86.4338 85.5776" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M82.9692 101.7C82.9692 101.7 75.6191 112.505 77.1555 115.801C78.692 119.097 88.1634 119.775 96.7897 102.992C105.416 86.2085 110.66 83.1559 110.491 73.6626" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M84.1641 117.468C84.1641 117.468 90.8699 129.776 101.018 113.161C111.166 96.5466 120.3 100.955 116.241 90.106" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M88.4608 45.1851C88.4608 45.1851 98.3138 50.4359 97.9743 55.8607C97.6348 61.2854 84.1043 62.9819 80.8901 55.8607" stroke="#1447FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Laser layer (last 5 paths) -->
+  <path d="M61.8214 114.141L84.3848 136.756C87.2817 139.66 85.2298 144.627 81.131 144.627H1.1792" stroke="#1447FC" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M2.49023 109.024H45.461" stroke="#1447FC" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60.6938 115.628L82.7194 137.705C84.5185 139.508 83.2447 142.591 80.6997 142.591H0.462891" stroke="#1447FC" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M2.49023 111.058H44.5168" stroke="#1447FC" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44.5065 130.971C46.9317 130.971 48.8977 129.986 48.8977 128.771C48.8977 127.555 46.9317 126.57 44.5065 126.57C42.0813 126.57 40.1152 127.555 40.1152 128.771C40.1152 129.986 42.0813 130.971 44.5065 130.971Z" stroke="#1447FC" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+
+</body>
+</html>
